@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(239, 239, 239);
+    font-family: 'Crete Round', serif;
+    color: rgb(37, 37, 37);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-right: 1.5rem;
+    letter-spacing: 0.3em;
+}
+
+.button {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+#grid {
+    display: grid;
+    width: auto;
+    grid-template-areas: "header"
+                       "banner" 
+                       "projects"
+                       "about"
+                       "contact"
+                       "footer";
+    grid-template-rows: 130px 500px 800px 600px 200px 100px;
+}
+
+/* Header */
+
+header {
+    grid-area: header;
+    display: flex;
+    column-gap: 50%;
+}
+
+.logo {
+    height: 5rem;
+    width: 10rem;
+    margin-left: 2rem;
+    align-self: center;
+}
+
+nav {
+    align-self: center;
+}
+
+#main-nav {
+   display: flex;
+}
+
+/* Banner */
+
+#banner {
+    background-color: #6CABB6;
+    grid-area: banner;
+    display: flex;
+    align-items: center;
+}
+
+.banner-half {
+    padding: 3rem 5rem 3rem 3rem;
+    flex: 1;
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem 0 3rem 0;
+}
+
+.banner-half img {
+    width: 70%;
+    height: auto;
+}
+
+#banner-image {
+
+}
+
+/* Projects */
+
+#projects {
+    grid-area: projects;
+}
+
+#projects-container {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+.project {
+    width: 20%;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.project p {
+    margin: 1rem 0;
+}
+
+#project-full-screen {
+    background-color: white;
+    height: 800px;
+    position: absolute;
+}
+
+/* About */
+
+#about {
+    grid-area: about;
+    background-color: #6CABB6;
+}
+
+#about-container {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+.experiences-column {
+    width: 20%;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    padding: 0 2rem;
+}
+
+.experience {
+    margin: 2rem 0;
+}
+
+.experience-year, .experience-place{
+    color: rgb(105, 105, 105);
+}
+
+.experience-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Contact */
+
+#contact {
+    grid-area: contact;
+}
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+}
