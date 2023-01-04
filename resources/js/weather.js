@@ -1,4 +1,5 @@
-const apiKey = '67c3a16d72b7b60fcc579617d0a4e3ed';
+import { apiKey } from '../../config';
+
 const owBaseUrl = 'http://api.openweathermap.org';
 
 const inputField = document.getElementById('city');
