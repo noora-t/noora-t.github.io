@@ -1,0 +1,131 @@
+/* || Projects fullscreen */
+
+h2 {
+    font-size: 4rem!important;
+}
+
+.project-fullscreen {
+    align-items: center;
+    display: none;
+}
+
+.description {
+    padding: 3rem 3rem 1rem 5rem;
+    width: 50%;
+}
+
+.description h2 {
+    text-align: left;
+}
+
+.description ul {
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.description a {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.description a:hover {
+    text-decoration: none;
+    color: var(--red);
+}
+
+.slideshow {
+     width: 50%;  
+     height: 100vh;  
+ }
+
+.slides {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.controls-container {
+    text-align: center!important;
+    padding: 0.01rem 2rem;
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
+    font-size: 2rem!important;
+    color: white;
+    position: absolute;
+    left: 75%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    width: 50%;
+}
+
+.controls-container:after, .controls-container:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.controls-left, .controls-right, .controls-middle {
+    cursor: pointer;
+}
+
+.controls-left {
+    float: left!important;
+}
+
+.controls-right {
+    float: right!important;
+}
+
+.controls-left:hover, .controls-right:hover {
+    color: var(--blue);
+}
+
+.controls-middle {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.fill, .controls-middle:hover {
+    color: white!important;
+    background-color: white!important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-fullscreen {
+        flex-wrap: wrap;
+    }
+
+    .description {
+        padding: 3rem;
+        width: 100%;
+    }
+
+    .slideshow {
+        width: 100%; 
+        height: 34rem; 
+    }
+
+    .controls-container {
+        width: 100%;
+        left: 50%;
+        bottom: 0%;
+    }
+
+    #projects-container-fullscreen {
+        width: 90%;
+        height: auto;
+        left: 5%;
+    }
+}
+
+#second, #third {
+    display: none;
+}

@@ -6,103 +6,160 @@
         <script src="./resources/js/main.js" defer></script>
     
         <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet"> 
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        </head>
     <body>
-        <div id="grid">
+        <button id="scroll-to-top-btn"><i class="material-symbols-outlined">
+            expand_less
+        </i></button>
+        <!-- HEADER -->
+        <header id="header">
+            <img src="./resources/images/logo.png" class="logo" />
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <!-- HEADER -->
-            <header>
-                <img src="./resources/images/logo.png" class="logo" />
-                <nav>
-                    <ul id="main-nav">
-                        <li>Work</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-            </header>
+        <!-- BANNER -->
+        <section id="banner">               
+            <div class="banner-text">
+                <h1>Hello, I'm Noora Toimela</h1>
+                <p>I am a Software Developer with work experience in Unity and C# 
+                    development, and an interest in Front-end development. Studied 
+                    Computer Science and Human-Technology Interaction in University. 
+                    Passionate about technology, eager to learn, and open to new 
+                    possibilities.</p>
+            </div>
+            
+            <img src="./resources/images/5483080_2844250.svg"/>
+                    
+        </section>
 
-            <!-- BANNER -->
-            <section id="banner">
-                <div class="banner-half">
-                    <h1>I am a developer.</h1>
-                    <p>asdhaosdijasdhokjasdlk kasdjasdlkjaskd js dasdjask j sjasddas jlkads jd aslkjdsa lkdsa jdas lkjdas klasdj asdkldjas</p>         
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="flexbox">
+                <div class="project">
+                    <img src="./resources/images/projects/dungeon-preview.png"/>
+                    <h3>Dungeon Game</h3>
+                    <p>Mobile stealth game made using Unity and C#.</p>
+                    <a href='project.html?project=0' target='_blank'><button class="button view-project">View Project</button></a>
                 </div>
-                <div class="banner-half">
-                    <img src="./resources/images/banner.jpg" id="banner-image"/>
-                </div>          
-            </section>
-
-            <!-- PROJECTS -->
-            <section id="projects">
-                <h2>My Projects</h2>
-                <div id="projects-container">
-                    <div class="project">
-                        <img src="./resources/images/project1.jpg"/>
-                        <h3>Title of Project</h3>
-                        <p>Short description of project.</p>
-                        <button class="button view-project">View Project</button>
-                    </div>
-                    <div class="project">
-                        <img src="./resources/images/project2.jpg"/>
-                        <h3>Title of Project</h3>
-                        <p>Short description of project.</p>
-                        <button class="button view-project">View Project</button>
-                    </div>
-                    <div class="project">
-                        <img src="./resources/images/project3.jpg"/>
-                        <h3>Title of Project</h3>
-                        <p>Short description of project.</p>
-                        <button class="button view-project">View Project</button>
-                    </div>
+                <div class="project">
+                    <img src="./resources/images/projects/weatherapp-preview.PNG"/>
+                    <h3>Weather App</h3>
+                    <p>Shows current weather in selected location.</p>
+                    <a href='project.html?project=1' target='_blank'><button class="button view-project">View Project</button></a>
                 </div>
-                <div id="project-fullscreen">
-                    <button class="close"><img src="./resources/images/icons-ui-close.png" /></button>
-                    <h2>Title</h2>
-                    <p>Description</p>
-                    <!-- slideshow -->
+                <div class="project">
+                    <img src="./resources/images/project3.jpg"/>
+                    <h3>Reddit Client</h3>
+                    <p>Coming soon...</p>
+                    <br>
+                    <button class="button view-project">View Project</button>
                 </div>
-            </section>
+            </div>
+            
+        </section>
 
-            <!-- ABOUT -->
-            <section id="about">
-                <h2>About Me</h2>
-                <div id ="about-container">
-                    <div class="experiences-column">
-                        <div class="experience">
-                            <p class="experience-year">2018-2021</p>
-                            <p class="experience-title">Master's Degree in Human-Technology Interaction</p>
-                            <p class="experience-place">Tampere University</p>
-                            <p class="experience-description"></p>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="flexbox">
+                <div class="experiences-column">
+                    <div class="experience">
+                        <img class="experience-logo" src="./resources/images/suitcase.png" />
+                        <p class="experience-year">2020-2021</p>
+                        <p class="experience-title bold">Research Assistant</p>
+                        <p class="experience-place">Tampere University</p>
+                        <p class="experience-description"></p>
+                    </div>
+                    <div class="experience">
+                        <img class="experience-logo" src="./resources/images/cap.png" />
+                        <p class="experience-year">2018-2021</p>
+                        <p class="experience-title bold">Master's Degree in Human-Technology Interaction</p>
+                        <p class="experience-place">Tampere University</p>
+                        <p class="experience-description"></p>
+                    </div>
+                    <div class="experience">
+                        <img class="experience-logo" src="./resources/images/cap.png" />
+                        <p class="experience-year">2015-2018</p>
+                        <p class="experience-title bold">Bachelor's Degree in Computer Sciences</p>
+                        <p class="experience-place">Tampere University</p>
+                        <p class="experience-description"></p>
+                    </div>   
+                </div>
+                <div class="experiences-column">
+                    <div class="experience">
+                        <div class="skills-container">
+                            <div class="skill">
+                                <img src="./resources/images/html_icon.png" />
+                                HTML
+                            </div>
+                            <div class="skill">
+                                <img src="./resources/images/css_icon.png" />
+                                CSS
+                            </div>
+                            <div class="skill skill-two-lines">
+                                <img src="./resources/images/javascript_icon.png" />
+                                JAVA SCRIPT
+                            </div>
+                            <div class="skill">
+                                <img src="./resources/images/react_icon.png" />
+                                REACT
+                            </div>
+                            <div class="skill">
+                                <img src="./resources/images/unity_icon.png" />
+                                UNITY
+                            </div>
+                            <div class="skill">
+                                <img src="./resources/images/c_sharp_icon.png" />
+                                C#
+                            </div>
+                            <div class="skill">
+                                <img src="./resources/images/sql_icon.png" />
+                                SQL
+                            </div>
+                            <div class="skill">
+                                <img src="./resources/images/java_icon.png" />
+                                JAVA
+                            </div>
+                            <div class="skill">
+                                <img src="./resources/images/git_icon.png" />
+                                GIT
+                            </div>
+                            <div class="skill">
+                                <img src="./resources/images/github_icon.png" />
+                                GITHUB
+                            </div>
+                            <div class="skill skill-two-lines">
+                                <img src="./resources/images/design_icon.png" />
+                                UI/UX DESIGN
+                            </div>
+                            <div class="skill skill-two-lines">
+                                <img src="./resources/images/testing_icon.png" />
+                                USABILITY TESTING
+                            </div>
                         </div>
-                        <div class="experience">
-                            <p class="experience-year">2015-2018</p>
-                            <p class="experience-title">Bachelor's Degree in Computer Sciences</p>
-                            <p class="experience-place">Tampere University</p>
-                            <p class="experience-description"></p>
-                        </div>
-                    </div>
-                    <div class="experiences-column">
-                        <div class="experience">
-                            <p class="experience-year">2020-2021</p>
-                            <p class="experience-title">Research Assistant</p>
-                            <p class="experience-place">Tampere University</p>
-                            <p class="experience-description"></p>
-                        </div>
-                    </div>
+                    </div>   
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- CONTACT -->
-            <section id="contact">
-                <h2>Get In Touch</h2>
-            </section>
-            <footer>
-                
-            </footer>
-        </div>
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>noora.toimela@gmail.com</p>
+            <br>
+            <a href="https://github.com/noora-t" target="_blank">https://github.com/noora-t</a>
+        </section>
+        <footer>
+            
+        </footer>
     </body>
 </html>
