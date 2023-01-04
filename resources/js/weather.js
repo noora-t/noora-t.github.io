@@ -68,10 +68,13 @@ const firstLetterToUpperCase = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-searchButton.addEventListener('click', searchForWeather);
+searchButton.addEventListener('click', () => {
+    if (inputField.value !== "")
+        searchForWeather();
+});
 
 inputField.addEventListener("keypress", (event) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && inputField.value !== "") {
         event.preventDefault();
         searchButton.click();
         inputField.value = "";
