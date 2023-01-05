@@ -41,8 +41,15 @@ h2 {
 }
 
 .info {
-  position: relative;
-  z-index: 1;
+  height: 25rem;
+  width: 25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-part {
+  padding: 2rem 2rem 0 2rem;
 }
 
 #show-city {
@@ -80,11 +87,9 @@ h2 {
 
   #temperature {
     font-size: 6rem;
-    position: relative;
-    top: 0%;
-    left: 32%;
     font-weight: 100;
     letter-spacing: 0.3rem;
+    text-align: center;
   }
 
   #description {
@@ -96,5 +101,5 @@ h2 {
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15%;
+    padding: 10% 2rem 0 2rem;
   }
