@@ -1,6 +1,6 @@
 
 const apiKey = "e4380b8d102c977592f8f301b87d1313";
-const owBaseUrl = 'http://api.openweathermap.org';
+const owBaseUrl = 'https://api.openweathermap.org';
 
 const inputField = document.getElementById('city');
 const searchButton = document.getElementById('search-button');
