@@ -1,16 +1,3 @@
-// Url params for selecting project to show
-const urlParams = new URLSearchParams(window.location.search);
-const projectId = urlParams.get('project');
-let fullScreenProjects = document.querySelectorAll('.project-fullscreen');
-
-showProject();
-
-function showProject() {
-    fullScreenProjects[projectId].style.display = 'flex';
-}
-
-// Code for slideshow
-
 var slideIndex = 1;
 showDivs(slideIndex);
 

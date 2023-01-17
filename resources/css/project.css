@@ -1,12 +1,16 @@
 /* || Projects fullscreen */
 
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
 h2 {
     font-size: 4rem!important;
 }
 
 .project-fullscreen {
     align-items: center;
-    display: none;
+    display: flex;
 }
 
 .description {
@@ -124,8 +128,4 @@ h2 {
         height: auto;
         left: 5%;
     }
-}
-
-#second, #third {
-    display: none;
 }

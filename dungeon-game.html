@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+        <link href="./resources/css/project.css" type="text/css" rel="stylesheet">
+        <script src="./resources/js/slideshow.js" defer></script>
+    </head>
+    <body>
+        <div id="projects-container-fullscreen">
+            <div class="project-fullscreen" id="first"> 
+                <div class="description">
+                    <h2>Dungeon Game</h2>
+                    <ul>
+                        <li>A small three level mobile stealth game I made using Unity and C#.</li>
+                        <li>Choose your weapon and make your way through the levels fighting skeletons and collecting coins.</li>
+                        <li>With the coins you can buy better weapons.</li>
+                    </ul>
+                    <br>
+                    <p>Read the source code in <a href="https://github.com/noora-t/Dungeon-Game" target='_blank'>GitHub</a></p>
+                    <p>Play the game on <a href="https://nnoora.itch.io/dungeon-game" target='_blank'>Itch.io</a></p>
+                </div>                 
+
+                <!-- slideshow -->
+                <div class="slideshow">
+                    <img class="slides" src="./resources/images/projects/dungeon1.svg">
+                    <img class="slides" src="./resources/images/projects/dungeon2.svg">
+                    <img class="slides" src="./resources/images/projects/dungeon3.svg">
+                    <img class="slides" src="./resources/images/projects/dungeon4.svg">
+                    <img class="slides" src="./resources/images/projects/dungeon5.svg">
+                    <div class="controls-container">
+                        <div class="controls-left" onclick="plusDivs(-1)">&#10094;</div>
+                        <div class="controls-right" onclick="plusDivs(1)">&#10095;</div>
+                        <span class="controls-middle" onclick="currentDiv(1)"></span>
+                        <span class="controls-middle" onclick="currentDiv(2)"></span>
+                        <span class="controls-middle" onclick="currentDiv(3)"></span>
+                        <span class="controls-middle" onclick="currentDiv(4)"></span>
+                        <span class="controls-middle" onclick="currentDiv(5)"></span>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+        <link href="./resources/css/weather.css" rel="stylesheet" type="text/css" />
+        <script src="./resources/js/weather.js" defer></script>
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
+    </head>
+    <body>
+        <div id="projects-container-fullscreen">
+            <div class="project-fullscreen" id="third">
+                <div class="weather-card">
+                    <div class="overlay"></div>
+                    <div class="info">
+                        <div class="top-part">
+                            <p>Weather</p>
+                            <h3 id="show-city">City</h3>
+                            <div class="search-container">
+                                <input value="" type="text" placeholder="City" id="city" name="city">
+                                <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="mid-part">
+                            <h2 id="temperature">25°</h2>
+                            <p id="description">Partially Cloudy</p>
+                        </div>
+                       
+            
+                        <ul class="bottom-part">
+                            <li><span class="material-symbols-outlined">compress</span><span id="pressure">1044pha</span></li>
+                            <li><span class="material-symbols-outlined">humidity_percentage</span><span id="humidity">33%</span></li>
+                            <li><span class="material-symbols-outlined">air</span><span id="wind">12km/h</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </body>
+</html>

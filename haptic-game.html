@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+        <link href="./resources/css/project.css" type="text/css" rel="stylesheet">
+        <script src="./resources/js/slideshow.js" defer></script>
+    </head>
+    <body>
+        <div id="projects-container-fullscreen">
+            <div class="project-fullscreen" id="second"> 
+                <div class="description">
+                    <h2>Haptic Quest Game</h2>
+                    <p>Haptic Quest is a multimodal game that utilizes active haptic feedback. Made with Unity and C#. The goal was to partly replace visual elements in the game with haptics, instead of augmenting the game with haptics.</p>
+                    <br>
+                    <p>The idea of the game is to collect objects, that are initially invisible, but with the help of navigation aids, the player is able to navigate towards the objects. The game can be played with a vibrating game controller. The specific vibration patterns replace any visual navigation aids such as the visibility of the collectable objects and any kind of map. The haptic pattern was chosen based on the recommendations on how the duration, frequency, amplitude and rhythm should be changed to convey information.</p>
+                    <br>
+                    <p>The player will be equipped with a wand that enables to feel the signals the collectable objects are sending as vibrations, when the wand is pointed in a direction where an object is placed.</p>
+                    <br>
+                    <p>Read the source code in <a href="https://github.com/noora-t/Haptic-Quest" target='_blank'>GitHub</a></p>
+                </div>                 
+
+                <!-- slideshow -->
+                <div class="slideshow">
+                    <img class="slides" src="./resources/images/projects/haptic1.png">
+                    <img class="slides" src="./resources/images/projects/haptic2.png">
+                    <img class="slides" src="./resources/images/projects/haptic3.png">
+                    <div class="controls-container">
+                        <div class="controls-left" onclick="plusDivs(-1)">&#10094;</div>
+                        <div class="controls-right" onclick="plusDivs(1)">&#10095;</div>
+                        <span class="controls-middle" onclick="currentDiv(1)"></span>
+                        <span class="controls-middle" onclick="currentDiv(2)"></span>
+                        <span class="controls-middle" onclick="currentDiv(3)"></span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </body>
+</html>
